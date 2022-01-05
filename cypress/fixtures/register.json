@@ -1,0 +1,34 @@
+{
+  "signup": {
+    "name": "Daniel",
+    "cpf": "00000014141",
+    "email": "teste@cypress.com",
+    "whatsapp": "11999999999",
+    "address": {
+      "postalCode": "05735030",
+      "street": "Rua Carlos Magalhães",
+      "number": "400",
+      "details": "Torre 1, Apto 87",
+      "district": "Parque Reboucas",
+      "cityState": "São Paulo/SP"
+    },
+    "deliveryMethod": "Moto",
+    "cnh": "cnh-digital.jpg"
+  },
+  "cpf_inv": {
+    "name": "Daniel",
+    "cpf": "000000141AA",
+    "email": "teste@cypress.com",
+    "whatsapp": "11999999999",
+    "address": {
+      "postalCode": "05735030",
+      "street": "Rua Carlos Magalhães",
+      "number": "400",
+      "details": "Torre 1, Apto 87",
+      "district": "Parque Reboucas",
+      "cityState": "São Paulo/SP"
+    },
+    "deliveryMethod": "Moto",
+    "cnh": "cnh-digital.jpg"
+  }
+}
