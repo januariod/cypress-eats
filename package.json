@@ -1,14 +1,19 @@
 {
   "name": "buger-eats",
   "version": "1.0.0",
-  "description": "projeto de testes de aceitacao usando cypress",
+  "description": "acceptance test with cypress",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "lint:fix": "eslint cypress/**/*.js --fix",
+    "lint": "eslint cypress/**/*.js",
+    "cy:e2e-smoke": "cypress run --record --tag 'smoke' --env grepTags=@smoke",
+    "cy:e2e": "cypress run --record --tag 'full'",
+    "cy:open": "npx cypress open",
+    "test": "cypress run"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/januariod/cypress.git"
+    "url": "git+https://github.com/januariod/cypress-eats.git"
   },
   "keywords": [
     "cypress",
@@ -20,15 +25,14 @@
   "author": "Daniel Januario",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/januariod/cypress/issues"
+    "url": "https://github.com/januariod/cypress-eats/issues"
   },
-  "homepage": "https://github.com/januariod/cypress#readme",
+  "homepage": "https://github.com/januariod/cypress-eats#readme",
   "devDependencies": {
-    "cypress": "=9.0.0",
-    "cypress-file-upload": "=5.0.8",
-    "eslint": "^8.5.0",
-    "eslint-config-airbnb-base": "^15.0.0",
+    "cypress": "^10.3.1",
+    "cypress-grep": "^2.6.1",
+    "eslint": "^8.20.0",
     "eslint-plugin-cypress": "^2.12.1",
-    "eslint-plugin-import": "^2.25.3"
+    "husky": "^8.0.1"
   }
 }

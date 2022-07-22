@@ -36,7 +36,7 @@ class SignupPage {
 
     cy.contains('.delivery-method li', deliver.deliveryMethod).click();
 
-    cy.get('input[accept^="image"]').attachFile(`/images/${deliver.cnh}`);
+    cy.get('input[type="file"]').selectFile(`cypress/fixtures/images/${deliver.cnh}`, { force: true });
   }
 
   submit() {

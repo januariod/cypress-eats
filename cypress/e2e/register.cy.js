@@ -1,9 +1,6 @@
-/* eslint-disable func-names */
-/// <reference types="cypress" />
-
 import signup from '../pages/SignupPage';
 
-describe('Cadastro', () => {
+describe('Cadastro', { tags: '@smoke' }, () => {
   beforeEach(() => {
     cy.fixture('register').as('register');
   });
