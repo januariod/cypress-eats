@@ -1,11 +1,11 @@
 import signup from '../pages/SignupPage';
 
-describe('Cadastro', { tags: '@smoke' }, () => {
+describe('Register', { tags: '@smoke' }, () => {
   beforeEach(() => {
     cy.fixture('register').as('register');
   });
 
-  it('tornando-se um entregador', function () {
+  it('becoming a deliver', function () {
     signup.go();
     signup.fillForm(this.register.signup);
     signup.submit();
@@ -15,7 +15,7 @@ describe('Cadastro', { tags: '@smoke' }, () => {
     signup.modalContentShouldBe(expectedMessage);
   });
 
-  it('CPF inválido', function () {
+  it('invalid CPF', function () {
     signup.go();
     signup.fillForm(this.register.cpf_inv);
     signup.submit();
