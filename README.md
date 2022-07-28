@@ -1,5 +1,7 @@
 # _End-To-End_ tests with Cypress
 
+[![ci](https://github.com/januariod/cypress-eats/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/januariod/cypress-eats/actions/workflows/ci.yml)
+
 Sample project to demonstrate end-to-end (e2e) tests with Page Object pattern written with Cypress running on a CI service.
 
 ## Pre-requirements
@@ -37,3 +39,5 @@ Run `npm run cy:e2e-smoke` to run smoke tests in headless mode on cy server.
 ___
 
 Made with ❤️ by [Daniel Januario](https://github.com/januariod).
+
+Tks to @papitorocks and QA Ninja School :love_you_gesture:
